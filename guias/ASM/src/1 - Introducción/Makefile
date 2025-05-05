@@ -8,10 +8,10 @@ TARGET := HolaMundo
 all: $(TARGET)
 # assembly
 HolaMundo.o: HolaMundo.asm
-        $(AS) $(ASFLAGS) $<
+	$(AS) $(ASFLAGS) $<
 
 # linking
 $(TARGET): HolaMundo.o
-        $(LD) $(LDFLAGS) $< -o $@
+	$(LD) $(LDFLAGS) $< -o $@
 clean:
-        rm -rf *.o $(TARGET)
+	rm -rf *.o $(TARGET)
