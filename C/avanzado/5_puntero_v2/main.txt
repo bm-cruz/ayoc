@@ -1,0 +1,9 @@
+"x" es de tipo "uint8_t*" pues "*x" es de tipo "uint8_t"
+"y" es de tipo "int8_t*" pues "*y" es de tipo "int8_t"
+
+Tienen distinto tipo porque el valor al que apunta x
+no puede ser representado con el tipo de *y,
+y viceversa tampoco, estan ambos fuera del rango del otro.
+
+El valor al que apunta x es de tipo uint8_t (unsigned char, rango: 0 a 255),
+mientras que el valor que al que apunta y es de tipo int8_t (signed char, rango: -128 a 127).

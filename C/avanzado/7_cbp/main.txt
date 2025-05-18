@@ -1,0 +1,4 @@
+Si la firma de la funcion swap fuera "void swap(int a, int b)"
+en lugar de "void swap(int* a, int* b)",
+no podriamos intercambiar los valores de "x" e "y" pues al invocarla en la funcion main
+con dos variables, se generaria una copia de estos, nunca alterando las variables originales.
